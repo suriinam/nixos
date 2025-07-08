@@ -3,7 +3,6 @@
   pkgs,
   browser,
   terminal,
-  terminalFileManager,
   kbdLayout,
   kbdVariant,
   ...
@@ -88,7 +87,6 @@
           "$mainMod" = "SUPER";
           "$term" = "${getExe pkgs.${terminal}}";
           "$editor" = "code --disable-gpu";
-          "$fileManager" = "$term --class \"terminalFileManager\" -e ${terminalFileManager}";
           "$browser" = browser;
 
           env = [
@@ -274,7 +272,6 @@
             "opacity 0.80 0.80,class:^(codium-url-handler)$"
             "opacity 0.80 0.80,class:^(code)$"
             "opacity 0.80 0.80,class:^(code-url-handler)$"
-            "opacity 0.80 0.80,class:^(terminalFileManager)$"
             "opacity 0.80 0.80,class:^(org.kde.dolphin)$"
             "opacity 0.80 0.80,class:^(org.kde.ark)$"
             "opacity 0.80 0.80,class:^(nwg-look)$"

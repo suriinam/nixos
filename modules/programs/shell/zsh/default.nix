@@ -1,7 +1,6 @@
 {
   self,
   pkgs,
-  terminalFileManager,
   ...
 }: {
   home-manager.sharedModules = [
@@ -43,9 +42,6 @@
           eval "$(direnv hook zsh)"
 
           # Key Bindings
-          # bindkey -s ^t "tmux-sessionizer\n"
-          # bindkey '^f' "cd $(${pkgs.fd}/bin/fd . /mnt/work /mnt/work/Projects/ /run/current-system ~/ --max-depth 1 | fzf)\n"
-          bindkey '^l' "${terminalFileManager}\r"
           bindkey '^a' beginning-of-line
           bindkey '^e' end-of-line
 

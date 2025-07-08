@@ -5,7 +5,6 @@
   browser,
   editor,
   terminal,
-  terminalFileManager,
   ...
 }: {
   imports = [
